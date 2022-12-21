@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/17cbdd6df8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Calculadora de IMC</h1>
+        <h2>Indice de massa corporal</h2>
+    </header>
+
+    <figure>
+        <img src="tabela-imc.png" alt="tabela-imc">
+        <figcaption>Tabela com os valores do IMC.</figcaption>
+    </figure>
+
+    <form>
+        <h2 id="calculadora">Calcule seu IMC</h2>
+        <label>Nome</label><input type="text" id="nome">
+        <label>Peso</label><input type="number"id="peso">
+        <label>Altura</label><input type="number" id="altura">
+        <label></label><input type="button" id="botao" onclick="calcular()" value="Calcular">
+        <p id="msg"></p> 
+    </form>
+
+    <footer>
+        <p><a href="https://www.instagram.com/vm_freire/" target="_blank"><i class="fa-brands fa-instagram fa-2x" id="inst"></i></a><a href="https://wa.me/5543998299356" target="_blank"><i class="fa-brands fa-whatsapp fa-2x" id="wpp"></i></a></p>
+        &copy VitorFreire
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
